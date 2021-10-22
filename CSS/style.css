@@ -1,0 +1,184 @@
+@font-face {
+    font-family: Helvetica__Bold;
+    src: url('../Fonts/Helvetica-Font/Helvetica-Bold.ttf');
+}
+
+@font-face {
+    font-family: OpenSans__Bold;
+    src: url('../Fonts/OpenSans/OpenSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: OpenSans__SemiBold;
+    src: url('../Fonts/OpenSans/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: OpenSans__Regular;
+    src: url('../Fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+    background-image: url('../Assets/login.jpg');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards {
+    border-radius: 20px;
+    background-color: #FFFDFB;
+    height: auto;
+    box-shadow: -20px 12px 40px rgba(61, 61, 61, 0.25), 20px 24px 40px rgba(61, 61, 61, 0.25);
+}
+
+.cards img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.logo__img {
+    position: relative;
+}
+
+.head__text {
+    position: absolute;
+    top: 69px;
+    left: 40px;
+}
+
+.head__text h2 {
+    color: #FFFFFF;
+    font-family: 'OpenSans__Bold';
+    font-size: calc(24pt + 0.15vw);
+    line-height: 1.2195;
+}
+
+.head__text p {
+    color: #FFFFFF;
+    font-family: 'OpenSans__SemiBold';
+    font-size: calc(9pt + 0.15vw);
+    line-height: 1.4195;
+    letter-spacing: 0.03em;
+}
+
+.fl__txt {
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.fl__txt h4 {
+    color: #2D2C2C;
+    font-family: 'OpenSans__Bold';
+    font-size: calc(15pt + 0.15vw);
+}
+
+.input {
+    width: 85%;
+    margin: auto;
+}
+
+.input p {
+    float: right;
+    color: #ACACAC;
+    font-size: calc(8pt + 0.15vw);
+    font-family: 'OpenSans__Regular';
+}
+
+.input label {
+    color: #2D2C2C;
+    font-family: 'OpenSans__SemiBold';
+    font-size: calc(9pt + 0.15vw);
+}
+
+input[type="text"] {
+    color: #2D2C2C;
+    font-family: 'OpenSans__SemiBold';
+    font-size: calc(9pt + 0.15vw);
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #F3F1FF;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: 1.5px dashed #23139E;
+}
+
+.form-control {
+    color: #212529;
+    background-color: #F3F1FF;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border: 1.5px dashed #23139E;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#on-click {
+    width: 15px;
+    transform: translate(-16px, -3px);
+}
+
+.bt-one {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+.bt-one button {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    background: linear-gradient(87.75deg, #FFC107 14.51%, #FFE03A 107.19%);
+    box-shadow: 0px 20px 40px rgba(149, 59, 197, 0.2);
+    border-radius: 15px;
+    color: #000000;
+    font-family: 'OpenSans__Bold';
+    font-size: calc(10pt + 0.15vw);
+    transition: .3s ease-in;
+}
+
+.bt-one button:hover {
+    transform: translateY(-3px);
+    transition: .3s ease-in;
+    background: linear-gradient(247.97deg, #F440FD 3.63%, #F661B6 37.87%, #FB718B 66.87%, #FE8858 100%);
+}
+
+@media screen and (max-width: 539px) {
+    .head__text h2 {
+        font-size: calc(12pt + 0.15vw);
+    }
+    .head__text p {
+        font-size: calc(8pt + 0.15vw);
+    }
+    .head__text {
+        left: 20px;
+    }
+    .head__text p br {
+        display: none;
+    }
+    .fl__txt h4 {
+        font-size: calc(11pt + 0.15vw);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .head__text {
+        top: 30px;
+    }
+}
